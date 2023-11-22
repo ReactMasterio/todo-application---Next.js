@@ -1,6 +1,9 @@
 import Image from 'next/image'
 import search_icon from '@/public/images/search_icon.svg'
 import add_icon from '@/public/images/add.svg'
+import Table from './Components/Table'
+
+const data: object = [];
 
 export default function Home() {
   return (
@@ -39,6 +42,11 @@ export default function Home() {
         </form>
 
         <div className="divider"></div>
+
+
+        <div className="container flex justify-center align-middle">
+          <Table data={data} />
+        </div>
       </div>
     </main>
   )
